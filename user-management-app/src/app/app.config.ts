@@ -15,6 +15,6 @@ export const appConfig: ApplicationConfig = {
 };
 export const config = signal({
   production: false,
-  googleMapsApiKey: 'YOUR_API_KEY',
+  googleMapsApiKey: '',
   apiUrl: 'https://reqres.in/api',
 });

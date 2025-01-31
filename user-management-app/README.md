@@ -1,59 +1,105 @@
-# UserManagementApp
+# User Management Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.1.
+This web application is built with Angular 19.0.1 and provides an intuitive interface for complete user management.
 
-## Development server
+## Main Features
 
-To start a local development server, run:
+- Complete user management (CRUD)
+- Intuitive admin dashboard
+- User authentication and authorization
+- Role and permission management
+- Responsive and modern interface
+
+## Prerequisites
+
+- Node.js (version 18 or higher)
+- Angular CLI 19.0.1
+- Internet connection
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/gabustos756/user-management.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Available Commands
+
+### Development
 
 ```bash
 ng serve
 ```
+Starts the development server at `http://localhost:4200/`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Build
 
 ```bash
 ng build
 ```
+Generates the production version in the `dist/` directory
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Testing
 
 ```bash
 ng test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Runs unit tests with Karma
 
 ```bash
 ng e2e
 ```
+Runs end-to-end tests
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Other Useful Commands
 
-## Additional Resources
+```bash
+ng generate component [name]    # Generates a new component
+ng generate service [name]      # Generates a new service
+ng generate guard [name]        # Generates a new guard
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── components/       # Application components
+│   ├── services/        # User management services
+│   ├── guards/          # Authentication and authorization guards
+│   ├── models/          # Interfaces and models
+│   └── shared/          # Shared components and utilities
+├── assets/              # Static resources
+└── environments/        # Environment configurations
+```
+
+## Usage Guide
+
+1. **Login**: Access with your credentials on the main page
+2. **Control Panel**: Manage users from the main dashboard
+3. **User Management**:
+   - Create new users
+   - Edit existing information
+   - Assign roles and permissions
+   - Delete users
+
+## Support
+
+To report issues or request new features, please create an issue in the project repository.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the [LICENSE]. See the `LICENSE` file for details.
